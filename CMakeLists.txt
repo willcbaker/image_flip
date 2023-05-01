@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(image_flip)
 
 ## Add support for C++11, supported in ROS Kinetic and newer
@@ -51,7 +51,7 @@ target_link_libraries(
 #############
 
 ## Mark executables and/or libraries for installation
-install(TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_node
+install(TARGETS ${PROJECT_NAME}
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
